@@ -25,6 +25,8 @@
     }
     .input:focus {
       border: none !important;
+      background-color: #fff;
+      color: #000;
     }
   }
 }
@@ -97,5 +99,6 @@
   }
   .search{
     width: 100% !important;
+    max-width: 375px;
   }
 }
