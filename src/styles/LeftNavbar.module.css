@@ -1,0 +1,65 @@
+.leftnav {
+  width: clamp(150px,15.325vw,300px);
+}
+
+.logo {
+  color: #000;
+  font-family: Outfit;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px 24px;
+}
+.medact {
+  padding: 15px;
+
+  .top {
+    color: #000;
+    font-family: Outfit;
+    font-size: clamp(16px,1.5vw,24px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .bottom {
+    margin-top: clamp(16px,1.5vw,30px);
+    background-color: #04095a;
+    color: #fff;
+    font-family: Outfit;
+    text-align: center;
+    font-size: clamp(12px,1vw,16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: clamp(6px,.53vw,10px) 0;
+    border-radius: 8px;
+  }
+}
+
+.tab {
+  padding: 20px;
+  .flex {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: clamp(8px,1vw,20px);
+    >img{
+      width: clamp(14px,1.2vw,24px);
+    }
+    > div {
+      color: #7e7e7e;
+      font-family: Outfit;
+      font-size: clamp(16px,1.2vw,24px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .select {
+    background-color: #f8fbff;
+    color: #04095A;
+    border-right: 2px solid #04095A;
+    padding: 16px 13px;
+  }
+}

@@ -1,0 +1,41 @@
+.upcomingTask,
+.completedTask {
+  padding: 22px 24px;
+  background: #fff;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px,2vw,40px);
+  margin-bottom: 33px;
+}
+
+.dateStep {
+  color: #000;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 24px 0 12px 0;
+}
+@media screen and (max-width:900px){
+  .upcomingTask{
+    margin:0 auto !important;
+
+  }
+}
+@media screen and (max-width:768px){
+  .top{
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .cardFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

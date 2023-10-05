@@ -1,0 +1,133 @@
+.card {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid #e9ecf1;
+  background: #fff;
+  padding: clamp(14px, 1.2vw, 25px);
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  gap: clamp(18px, 4.16vw, 80px);
+  .user {
+    display: flex;
+    gap: clamp(12px,1.2vw,25px);
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: clamp(12px, 1.2vw, 20px);
+    .icon {
+      display: flex;
+      align-items: center;
+    }
+    .name {
+      color: #000;
+      font-size: clamp(14px, 1.2vw, 24px);
+      font-weight: 600;
+      letter-spacing: -0.72px;
+    }
+    .appid {
+      color: #7e7e7e;
+      letter-spacing: -0.6px;
+    }
+    .assess {
+      color: rgba(55, 123, 255, 0.9);
+      letter-spacing: -0.4px;
+    }
+  }
+  .task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .tflex {
+      /* width: 334px; */
+      display: flex;
+      gap: clamp(14px, 1vw, 20px);
+      font-family: Outfit;
+      font-size: clamp(12px, 1vw, 20px);;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      .tleft {
+        white-space: nowrap;
+        width: clamp(75px,6.25vw,120px);
+        color: #7e7e7e;
+      }
+      .tright {
+        color: #333;
+      }
+    }
+  }
+}
+.icon > img {
+  width: clamp(60px, 6.25vw, 120px);
+  height: clamp(60px, 6.25vw, 120px);
+  border-radius: 50%;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &:first-child{
+    white-space: nowrap;
+  }
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #7e7e7e;
+    text-align: right;
+    font-family: Outfit;
+    font-size: clamp(12px, 1vw, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    > div {
+      color: #f44336;
+      font-size: clamp(14px, 1.2vw, 24px);
+      font-weight: 500;
+      line-height: 30px;
+    }
+  }
+  .btn > button {
+    white-space: nowrap;
+    display: inline-flex;
+    padding: clamp(6px, .7vw, 12px) clamp(12px, 1.8vw, 32px);
+    align-items: flex-start;
+    gap: 10px;
+    font-size: clamp(12px, 1vw, 20px);
+    border-radius: 6px;
+    background: #04095a;
+    color: #fff;
+    border: none;
+  }
+}
+
+@media screen and (max-width:768px){
+  .card{
+    flex-direction: column;
+    padding: 10px;
+    min-width: 327px;
+    .user{
+      justify-content: space-between;
+    }
+    .task{
+      gap: 2px;
+    }
+    .details{
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+}

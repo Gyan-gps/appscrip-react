@@ -1,0 +1,56 @@
+.clinical {
+  .top {    
+    padding: 0 clamp(10px,2vw,36px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 142px;
+    .ttop {
+      .div {
+        color: #000;
+        font-family: Outfit;
+        font-size: clamp(16px,1.1vw,22px);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .p {
+        color: #7e7e7e;
+        font-family: Outfit;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .tab {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      > div {
+        color: #7e7e7e;
+        font-family: Outfit;
+        font-size: clamp(14px,0.9vw,16px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 10px 5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bottom{
+    padding: clamp(10px,1.2vw,24px) clamp(10px,2vw,36px);
+    background: #F4F4F4;
+  }
+}
+@media screen and (max-width:900px){
+  .top{
+    height: auto !important;
+  }
+  .bottom{
+    padding: 0 !important;
+
+  }
+}
