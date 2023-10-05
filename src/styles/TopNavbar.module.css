@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 clamp(20px,2vw,40px);
+  border-bottom: 1px solid #f4f4f4;
   .logo {
     display: none;
     color: #000;
@@ -84,13 +85,22 @@
     line-height: normal;
   }
 }
-
+@media screen and (max-width:900px){
+  .topnav{
+    .logo{
+      display: block;
+    }
+    .left{
+      display: none;
+    }
+  }
+}
 @media screen and (max-width:768px){
   .topnav{
     .logo{
       display: block;
     }
-    >ul,.left{
+    >ul{
       display: none;
     }
     .menu{

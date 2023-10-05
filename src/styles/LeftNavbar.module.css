@@ -1,5 +1,6 @@
 .leftnav {
   width: clamp(150px,15.325vw,300px);
+  border-right: 1px solid #f4f4f4;
 }
 
 .logo {
@@ -9,7 +10,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 20px 24px;
+  padding: clamp(12px,1.35vw,26px) 24px;
+  border-bottom: 1px solid #f4f4f4;
 }
 .medact {
   padding: 15px;
@@ -44,6 +46,7 @@
     display: flex;
     align-items: center;
     gap: clamp(8px,1vw,20px);
+    padding: 16px 13px;
     >img{
       width: clamp(14px,1.2vw,24px);
     }
@@ -60,6 +63,5 @@
     background-color: #f8fbff;
     color: #04095A;
     border-right: 2px solid #04095A;
-    padding: 16px 13px;
   }
 }
